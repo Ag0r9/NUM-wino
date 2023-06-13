@@ -7,5 +7,6 @@ class Paths(NamedTuple):
     INPUT_DIR = DATA_DIR / "input"
     OUTPUT_DIR = DATA_DIR / "output"
     PREPARED_DIR = DATA_DIR / "prepared"
+    MODELS_DIR = DATA_DIR / "models"
     YAML_DIR = Path("src/config")
     DEFAULT_YAML_PATH = YAML_DIR / "default.yaml"

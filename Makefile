@@ -21,3 +21,6 @@ price:
 
 prepare:
 	poetry run python -m src.cli.app prepare
+
+train:
+	poetry run python -m src.cli.app train
