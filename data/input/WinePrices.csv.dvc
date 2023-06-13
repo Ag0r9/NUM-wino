@@ -1,0 +1,4 @@
+outs:
+- md5: 67ce08c5e328443e5accea18bc8a489c
+  size: 10657
+  path: WinePrices.csv
