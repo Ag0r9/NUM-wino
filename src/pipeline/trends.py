@@ -25,5 +25,5 @@ def show_trends():
     
     paths.OUTPUT_DIR.mkdir(exist_ok=True)
     save_csv(trends,
-        paths.OUTPUT_DIR / "trends",
+        paths.OUTPUT_DIR / "trends", index=True
     )

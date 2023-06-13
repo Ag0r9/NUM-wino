@@ -514,6 +514,25 @@ files = [
 ]
 
 [[package]]
+name = "bulwark"
+version = "0.6.1"
+description = "A python package for defensive data analysis."
+optional = false
+python-versions = ">=3.6"
+files = [
+    {file = "bulwark-0.6.1.tar.gz", hash = "sha256:18a61b1f7bb5af6495551a4381e9f511d6c4daf09c168e00f88a81d7f8bb143f"},
+]
+
+[package.dependencies]
+numpy = ">=1.15"
+pandas = ">=0.23.0"
+
+[package.extras]
+dev = ["Sphinx (>=2.0,<3.0)", "m2r", "pre-commit", "pytest", "pytest-cov", "setuptools (>=30.4)", "sphinx_rtd_theme", "tox"]
+docs = ["Sphinx (>=2.0,<3.0)", "m2r", "setuptools (>=30.4)", "sphinx_rtd_theme"]
+test = ["pytest", "pytest-cov"]
+
+[[package]]
 name = "cachetools"
 version = "5.3.1"
 description = "Extensible memoizing collections and decorators"
@@ -5171,4 +5190,4 @@ testing = ["big-O", "flake8 (<5)", "jaraco.functools", "jaraco.itertools", "more
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "33d85528170d07981ca5758a387edbebfb8bac24ab07fa691723cd892f2ac43c"
+content-hash = "d81dc533ef26642b73c3f7fa7ea623c91f7b5492bae8d2387c547d3349259208"

@@ -7,8 +7,8 @@ from sklearn.model_selection import train_test_split
 from src.config.paths import Paths
 
 
-def save_csv(data: pd.DataFrame, path: Path):
-    data.to_csv(path, index=False, encoding="utf-8", sep=",")
+def save_csv(data: pd.DataFrame, path: Path, index=False):
+    data.to_csv(path, index=index, encoding="utf-8", sep=",")
 
 
 def read_csv(path: Path) -> pd.DataFrame:

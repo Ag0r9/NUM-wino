@@ -30,3 +30,6 @@ evaluate:
 
 trends:
 	poetry run python -m src.cli.app trends
+
+streamlit:
+	poetry run streamlit run Home.py
