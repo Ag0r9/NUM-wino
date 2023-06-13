@@ -27,3 +27,6 @@ train:
 
 evaluate:
 	poetry run python -m src.cli.app evaluate
+
+trends:
+	poetry run python -m src.cli.app trends
