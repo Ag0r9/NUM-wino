@@ -1,8 +1,8 @@
 prepare:
-  name files: 
+  name_files: 
     - WineQT.csv
     - WinePrices.csv
-  x columns:
+  x_columns:
     - fixed acidity
     - volatile acidity
     - citric acid
@@ -17,11 +17,11 @@ prepare:
   target: price
   split: 0.33
 train:
-  model name: RFR
-  model params:
+  model_name: RFR
+  model_params:
     n_estimators: 100
     max_depth: 10
     min_samples_split: 2
     bootstrap: True
 evaluate:
-  model name: RFR
+  model_name: RFR

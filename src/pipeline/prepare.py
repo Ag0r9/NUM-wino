@@ -12,11 +12,11 @@ def prepare_data():
     paths: Paths = Paths()
     params = yaml.safe_load(open(paths.DEFAULT_YAML_PATH)).get("prepare")
     dfs = [
-        read_csv(paths.INPUT_DIR / filename) for filename in params.get("name files")
+        read_csv(paths.INPUT_DIR / filename) for filename in params.get("name_files")
     ]
     df = reduce(lambda left, right: pd.merge(left, right, on="Id"), dfs)
     datasets = train_test_split(
-        df[params.get("x columns")],
+        df[params.get("x_columns")],
         df[params.get("target")],
         test_size=params.get("split"),
     )

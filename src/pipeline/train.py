@@ -12,8 +12,8 @@ def train_model():
     params = yaml.safe_load(open(paths.DEFAULT_YAML_PATH)).get("train")
     X_train = read_csv(paths.PREPARED_DIR / "X_train")
     y_train = read_csv(paths.PREPARED_DIR / "y_train")
-    model = RandomForestRegressor(**params.get("model params"))
+    model = RandomForestRegressor(**params.get("model_params"))
     model.fit(X_train, y_train)
     paths.MODELS_DIR.mkdir(exist_ok=True)
-    with open(paths.MODELS_DIR / f"{params.get('model name')}.p", "wb") as f:
+    with open(paths.MODELS_DIR / f"{params.get('model_name')}.p", "wb") as f:
         pickle.dump(model, f)
