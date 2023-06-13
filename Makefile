@@ -12,10 +12,12 @@ black:
 
 format: isort black
 
-create_price:
-	poetry run python -m analytics.cli.app calculate-price
-
 status:
 	git status
 	poetry run dvc status
 
+price:
+	poetry run python -m analytics.cli.app calculate-price
+
+prepare:
+	poetry run python -m src.cli.app prepare

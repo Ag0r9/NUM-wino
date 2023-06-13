@@ -1,0 +1,4 @@
+outs:
+- md5: e9702671432410a02f73f9755fdc3a5d
+  size: 43210
+  path: X_train
